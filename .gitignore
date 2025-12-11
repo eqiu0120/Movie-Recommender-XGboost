@@ -1,0 +1,37 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+team_6_recommender_system.egg-info/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+.sh
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Model files (if they're large - you might want to keep small ones)
+# *.pkl
+# *.joblib
+
+# Log files
+*.log
+data/raw_data/movies/
+*_xx.py
+data/

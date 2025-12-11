@@ -1,0 +1,24 @@
+services:
+  recommender:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ../data:/app/data
+      - ../src/models:/app/src/models
+    restart: unless-stopped
+
+  retrainer:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.retrainer
+    volumes:
+      - ../data:/app/data
+      - ../src/models:/app/src/models
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - DVC_CACHE_DIR=/app/.dvc/cache
+    profiles:
+      - retrain
