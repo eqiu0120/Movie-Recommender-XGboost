@@ -2,7 +2,7 @@
 
 ### Overview
 
-This project implements a movie recommendation system for a simulated streaming service with around 1M customers and around 27K movies. Over the first milestones, we designed, deployed, and evaluated a production-ready recommendation service that interacts with the provided APIs and Kafka event streams. The system receives user activity logs (movie requests, ratings, and recommendation requests) and responds with personalized movie recommendations through an inference service.
+This project implements a movie recommendation system for a simulated streaming service with around 1M customers and around 27K movies. We designed, deployed, and evaluated a production-ready recommendation service that interacts with the provided APIs and Kafka event streams. The system receives user activity logs (movie requests, ratings, and recommendation requests) and responds with personalized movie recommendations through an inference service.
 
 ### Project Structure
 
@@ -121,3 +121,4 @@ model = joblib.load('src/models/xgb_recommender.joblib')
 
 As a team, we have acknowledged the existence of ethical issues in this project and have made efforts to minimize them. For the data gathered, we have ensured that no personally identifiable information (PII) is collected or shared beyond what is provided in the simulated dataset. Furthermore, we recognize that recommendation algorithms can amplify existing popularity biases;
 #
+
